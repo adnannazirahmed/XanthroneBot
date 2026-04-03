@@ -2,7 +2,7 @@
 
 # 🤖 Personal AI Assistant
 
-**A self-hosted, brutally honest AI accountability assistant — running 24/7 on Google Cloud, accessible via Telegram.**
+**A self-hosted, brutally honest AI accountability assistant running 24/7 on Google Cloud, accessible via Telegram.**
 
 ![Node.js](https://img.shields.io/badge/Node.js-20+-339933?style=flat-square&logo=node.js&logoColor=white)
 ![Gemini](https://img.shields.io/badge/Gemini-2.5%20Flash-4285F4?style=flat-square&logo=google&logoColor=white)
@@ -16,7 +16,7 @@
 
 ## What Is This?
 
-This is a personal AI assistant that lives in your Telegram. It's not a polite chatbot — it's designed to keep you disciplined, manage your schedule, and hold you accountable for your tasks and commitments.
+This is a personal AI assistant that lives in your Telegram. It's not a polite chatbot, it's designed to keep you disciplined, manage your schedule, and hold you accountable for your tasks and commitments.
 
 It runs 24/7 on a free Google Cloud VM, uses Google's Gemini 2.5 Flash model (free tier), and integrates directly with your Google Calendar and Google Tasks so it always knows what you have coming up.
 
@@ -25,14 +25,14 @@ It runs 24/7 on a free Google Cloud VM, uses Google's Gemini 2.5 Flash model (fr
 ## Features
 
 ### AI Chat
-• Powered by **Gemini 2.5 Flash** — fast, smart, free
+• Powered by **Gemini 2.5 Flash** fast, smart, free
 • Maintains **conversation memory** across messages within a session
-• Brutally honest system prompt — it will call you out if you're slacking
+• Brutally honest system prompt it will call you out if you're slacking
 • Responds in seconds from anywhere in the world
 
 ### Voice Messages
 • Send a voice note on Telegram and the bot transcribes it automatically using Gemini's native audio understanding
-• Replies to what you said — no extra setup needed
+• Replies to what you said no extra setup needed
 
 ### Google Calendar Integration
 • Read today's events: `/today`
@@ -48,9 +48,9 @@ It runs 24/7 on a free Google Cloud VM, uses Google's Gemini 2.5 Flash model (fr
 • Ask naturally: *"what tasks do I have pending?"*
 
 ### Proactive Reminders
-• **Event reminders** — bot messages you 30 min and 10 min before calendar events automatically
-• **Daily briefing** — every morning at 8am, bot sends your full day: events + pending tasks
-• No setup needed after initial Google auth — it just works
+• **Event reminders** bot messages you 30 min and 10 min before calendar events automatically
+• **Daily briefing** every morning at 8am, bot sends your full day: events + pending tasks
+• No setup needed after initial Google auth it just works
 
 ### Accountability Mode
 • The assistant is configured to be direct and honest, not polite for the sake of it
@@ -67,7 +67,7 @@ You (Telegram)
 Telegram Bot API
       │
       ▼
-GCP e2-micro VM (us-central1) — running 24/7, always free
+GCP e2-micro VM (us-central1) running 24/7, always free
       │
       ├──▶ Google Gemini 2.5 Flash API  (AI responses + voice transcription)
       ├──▶ Google Calendar API          (read/write events)
@@ -99,15 +99,15 @@ systemd integration → survives VM reboots
 
 | Service | Cost |
 |---|---|
-| GCP e2-micro (us-central1) | **$0/month** — always free tier |
-| 20GB standard persistent disk | **$0/month** — within free tier |
-| Gemini 2.5 Flash API | **$0/month** — free tier |
-| Google Calendar API | **$0/month** — free |
-| Google Tasks API | **$0/month** — free |
-| Telegram Bot API | **$0/month** — free |
+| GCP e2-micro (us-central1) | **$0/month** always free tier |
+| 20GB standard persistent disk | **$0/month** within free tier |
+| Gemini 2.5 Flash API | **$0/month** free tier |
+| Google Calendar API | **$0/month** free |
+| Google Tasks API | **$0/month** free |
+| Telegram Bot API | **$0/month** free |
 | **Total** | **$0/month** |
 
-> The GCP always-free tier covers 1 e2-micro instance + 30GB disk in us-central1, us-east1, or us-west1 permanently — no expiry.
+> The GCP always-free tier covers 1 e2-micro instance + 30GB disk in us-central1, us-east1, or us-west1 permanently no expiry.
 
 ---
 
@@ -182,7 +182,7 @@ pm2 startup
 | `/clear` | Reset conversation memory |
 | `/help` | Show all commands |
 
-> You can also chat naturally — *"what do I have tomorrow?"*, *"remind me I have a meeting at 3pm"*, *"what tasks haven't I done yet?"*
+> You can also chat naturally *"what do I have tomorrow?"*, *"remind me I have a meeting at 3pm"*, *"what tasks haven't I done yet?"*
 
 ---
 
@@ -224,15 +224,15 @@ personal-ai-bot/
 
 ## Security Notes
 
-• Bot is locked to your Telegram user ID via `TELEGRAM_ALLOWED_IDS` — nobody else can interact with it
-• API keys are stored in `.env` on the VM — never committed to Git
-• Google OAuth token stored locally at `~/google-token.json` — also excluded from Git
+• Bot is locked to your Telegram user ID via `TELEGRAM_ALLOWED_IDS` nobody else can interact with it
+• API keys are stored in `.env` on the VM never committed to Git
+• Google OAuth token stored locally at `~/google-token.json` also excluded from Git
 • `.gitignore` covers all sensitive files
 
 ---
 
 ## Built By
 
-**Adnan Nazir** — Cloud Computing & DevOps  
+**Adnan Nazir**  
 [GitHub](https://github.com/adnannazir900)
 
