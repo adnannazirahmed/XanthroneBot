@@ -25,36 +25,36 @@ It runs 24/7 on a free Google Cloud VM, uses Google's Gemini 2.5 Flash model (fr
 ## Features
 
 ### AI Chat
-- Powered by **Gemini 2.5 Flash** — fast, smart, free
-- Maintains **conversation memory** across messages within a session
-- Brutally honest system prompt — it will call you out if you're slacking
-- Responds in seconds from anywhere in the world
+• Powered by **Gemini 2.5 Flash** — fast, smart, free
+• Maintains **conversation memory** across messages within a session
+• Brutally honest system prompt — it will call you out if you're slacking
+• Responds in seconds from anywhere in the world
 
 ### Voice Messages
-- Send a voice note on Telegram and the bot transcribes it automatically using Gemini's native audio understanding
-- Replies to what you said — no extra setup needed
+• Send a voice note on Telegram and the bot transcribes it automatically using Gemini's native audio understanding
+• Replies to what you said — no extra setup needed
 
 ### Google Calendar Integration
-- Read today's events: `/today`
-- Read upcoming events: `/upcoming`
-- Ask naturally: *"what do I have this week?"*
-- Get real calendar data injected into AI context so answers are accurate
-- Automatically reminds you **30 minutes** and **10 minutes** before any event
+• Read today's events: `/today`
+• Read upcoming events: `/upcoming`
+• Ask naturally: *"what do I have this week?"*
+• Get real calendar data injected into AI context so answers are accurate
+• Automatically reminds you **30 minutes** and **10 minutes** before any event
 
 ### Google Tasks Integration
-- View all pending tasks: `/tasks`
-- Add a task: `/addtask Buy groceries`
-- Complete a task: `/done Buy groceries`
-- Ask naturally: *"what tasks do I have pending?"*
+• View all pending tasks: `/tasks`
+• Add a task: `/addtask Buy groceries`
+• Complete a task: `/done Buy groceries`
+• Ask naturally: *"what tasks do I have pending?"*
 
 ### Proactive Reminders
-- **Event reminders** — bot messages you 30 min and 10 min before calendar events automatically
-- **Daily briefing** — every morning at 8am, bot sends your full day: events + pending tasks
-- No setup needed after initial Google auth — it just works
+• **Event reminders** — bot messages you 30 min and 10 min before calendar events automatically
+• **Daily briefing** — every morning at 8am, bot sends your full day: events + pending tasks
+• No setup needed after initial Google auth — it just works
 
 ### Accountability Mode
-- The assistant is configured to be direct and honest, not polite for the sake of it
-- If you tell it you'll do something, it knows. If you ask about your tasks and haven't done them, it will say so.
+• The assistant is configured to be direct and honest, not polite for the sake of it
+• If you tell it you'll do something, it knows. If you ask about your tasks and haven't done them, it will say so.
 
 ---
 
@@ -115,11 +115,11 @@ systemd integration → survives VM reboots
 
 ### Prerequisites
 
-- A [Google Cloud account](https://cloud.google.com) (free)
-- A [Gemini API key](https://aistudio.google.com) (free)
-- A Telegram bot token from [@BotFather](https://t.me/botfather)
-- Your Telegram user ID from [@userinfobot](https://t.me/userinfobot)
-- Google OAuth2 credentials from GCP Console
+• A [Google Cloud account](https://cloud.google.com) (free)
+• A [Gemini API key](https://aistudio.google.com) (free)
+• A Telegram bot token from [@BotFather](https://t.me/botfather)
+• Your Telegram user ID from [@userinfobot](https://t.me/userinfobot)
+• Google OAuth2 credentials from GCP Console
 
 ### 1. Clone and install
 
@@ -224,10 +224,10 @@ personal-ai-bot/
 
 ## Security Notes
 
-- Bot is locked to your Telegram user ID via `TELEGRAM_ALLOWED_IDS` — nobody else can interact with it
-- API keys are stored in `.env` on the VM — never committed to Git
-- Google OAuth token stored locally at `~/google-token.json` — also excluded from Git
-- `.gitignore` covers all sensitive files
+• Bot is locked to your Telegram user ID via `TELEGRAM_ALLOWED_IDS` — nobody else can interact with it
+• API keys are stored in `.env` on the VM — never committed to Git
+• Google OAuth token stored locally at `~/google-token.json` — also excluded from Git
+• `.gitignore` covers all sensitive files
 
 ---
 
